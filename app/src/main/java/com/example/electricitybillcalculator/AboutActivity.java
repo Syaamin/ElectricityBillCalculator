@@ -28,7 +28,7 @@ public class AboutActivity extends AppCompatActivity {
         txtFullName.setText("Full Name: Nur Syaamin Syaamira Binti Mahmud");
         txtStudentId.setText("Student ID: 2025137201");
         txtCourse.setText("Course: ICT602 - Mobile Technology");
-        txtGitHubLink.setText("https://github.com/syaamin/ElectricityBillCalculator");
+        txtGitHubLink.setText("https://github.com/Syaamin/ElectricityBillCalculator");
         txtCopyright.setText("© 2026 Syaamin. All Rights Reserved.");
 
         // Make GitHub link clickable
