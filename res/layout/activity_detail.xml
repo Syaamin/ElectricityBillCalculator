@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Month:"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailMonth"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Units Used (kWh):"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailKWh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Charges:"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailTotalCharges"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rebate Percentage:"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailRebate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Cost:"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailFinalCost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="EDIT"
+                android:backgroundTint="#FF9800"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="DELETE"
+                android:backgroundTint="#F44336"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="BACK TO LIST"
+            android:backgroundTint="#1976D2"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

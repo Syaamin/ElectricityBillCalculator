@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill Calculator"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="20dp"
+            android:popupBackground="#FFFFFF"
+            android:theme="@style/SpinnerTheme"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Units Used (kWh)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <EditText
+            android:id="@+id/editKWh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:hint="Enter 1 - 1000"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rebate Percentage"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <SeekBar
+            android:id="@+id/seekBarRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:progress="0"/>
+
+        <TextView
+            android:id="@+id/txtRebateValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#1976D2"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="CALCULATE AND SAVE"
+            android:backgroundTint="#1976D2"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESULTS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#DDD"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/txtTotalCharges"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Total Charges: RM 0.00"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/txtFinalCost"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Final Cost: RM 0.00"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/txtSaveMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#4CAF50"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnViewList"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="HISTORY"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#4CAF50"/>
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="ABOUT"
+                android:backgroundTint="#FF9800"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

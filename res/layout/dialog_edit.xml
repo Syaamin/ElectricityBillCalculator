@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Units Used (kWh):"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editKWh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="Enter 1 - 1000"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rebate Percentage:"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/seekBarRebate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"/>
+
+    <TextView
+        android:id="@+id/txtRebateValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
